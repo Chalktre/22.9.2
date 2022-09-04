@@ -1,0 +1,22 @@
+.box {
+    position: relative;
+    width: 400px;
+    border-bottom: 1px solid #ccc;
+    margin: 100px auto;
+}
+
+.box input {
+    width: 370px;
+    height: 30px;
+    border: 0;
+    outline: none;
+}
+
+#eye {
+    position: absolute;
+    top: 8px;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+}
+

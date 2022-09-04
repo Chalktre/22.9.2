@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        /* #i1 {
+            float: left;
+            width: 300px;
+            height: 300px;
+        } */
+        #btn {
+            /* float: left; */
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <img src="../image/img1.jpg" alt="" id = i1> -->
+        <img src="../image/img2.jpg" alt="" id ='btn'>
+    </div>
+    
+    <script>
+        var box = document.getElementsByClassName('.box');
+        console.log(box);
+        // getElementByClassName无法获取.box 输出空数组
+        //使用的是chrome，理应没有兼容性原因，未知错误
+        var btn = document.getElementById('btn');
+        console.log(btn);
+        btn.onclick = function () {
+            box.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
